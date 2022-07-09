@@ -29,6 +29,7 @@
 
   .main-container {
     margin: 50px;
+    padding-bottom: 120px;
   }
 
   h1 {
