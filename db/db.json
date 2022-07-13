@@ -98,8 +98,32 @@
         "Tomate",
         "Pepino"
       ],
-      "status": "Solicitado",
+      "status": "Em produção",
       "id": 2
+    },
+    {
+      "name": "Zé da Silva",
+      "meat": "Maminha",
+      "bread": "Parmesão e Orégano",
+      "optionals": [
+        "Bacon",
+        "Cheddar",
+        "Tomate",
+        "Pepino"
+      ],
+      "status": "Finalizado",
+      "id": 3
+    },
+    {
+      "name": "Maria",
+      "meat": "Picanha",
+      "bread": "3 Queijos",
+      "optionals": [
+        "Bacon",
+        "Pepino"
+      ],
+      "status": "Solicitado",
+      "id": 4
     }
   ]
 }
