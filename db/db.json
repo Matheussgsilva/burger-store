@@ -79,17 +79,6 @@
   ],
   "burgers": [
     {
-      "name": "Matheus",
-      "meat": "Picanha",
-      "bread": "3 Queijos",
-      "optionals": [
-        "Bacon",
-        "Cheddar"
-      ],
-      "status": "Solicitado",
-      "id": 1
-    },
-    {
       "name": "Matheus Silva",
       "meat": "Veggie burger",
       "bread": "Italiano Branco",
@@ -100,19 +89,6 @@
       ],
       "status": "Em produção",
       "id": 2
-    },
-    {
-      "name": "Zé da Silva",
-      "meat": "Maminha",
-      "bread": "Parmesão e Orégano",
-      "optionals": [
-        "Bacon",
-        "Cheddar",
-        "Tomate",
-        "Pepino"
-      ],
-      "status": "Finalizado",
-      "id": 3
     },
     {
       "name": "Maria",

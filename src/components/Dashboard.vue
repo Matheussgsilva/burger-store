@@ -25,11 +25,11 @@
                 </div>
                 <div>
                     <select name="status" class="status">
-                        <option v-for="orderStatus in status" :key="orderStatus.id" :value="orderStatus.tipo" :selected="request.status === orderStatus.tipo">
+                        <option v-for="orderStatus in status" :key="orderStatus.id" :value="orderStatus.tipo" :selected="burger.status === orderStatus.tipo">
                             {{ orderStatus.tipo }}
                         </option>
                     </select>
-                    <button class="delete-btn">Cancelar</button>
+                    <button class="delete-btn" @click="deleteOrder(burger.id)">Cancelar</button>
                 </div>
             </div>
         </div>
@@ -57,6 +57,14 @@
 
                 this.status = data
             },
+            async deleteOrder(id) {
+                const req = await fetch(`http://localhost:3000/burgers/${id}`, {
+                    method: "DELETE"
+                })
+                const res = await req.json()
+
+                this.getRequests()
+            }
         },
         mounted() {
             this.getRequests(),
