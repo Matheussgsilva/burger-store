@@ -24,7 +24,7 @@
                     </ul>
                 </div>
                 <div>
-                    <select name="status" class="status">
+                    <select name="status" class="status" @change="updateOrder($event, burger.id)">
                         <option v-for="orderStatus in status" :key="orderStatus.id" :value="orderStatus.tipo" :selected="burger.status === orderStatus.tipo">
                             {{ orderStatus.tipo }}
                         </option>
@@ -41,7 +41,7 @@
         data() {
             return {
                 burgerOrders: null,
-                status: [],
+                status: []
             }
         },
         methods: {
@@ -64,11 +64,26 @@
                 const res = await req.json()
 
                 this.getRequests()
+            },
+            async updateOrder(event, id) {
+                const option = event.target.value
+
+                const dataJson = JSON.stringify({ status: option })
+
+                const req = await fetch(`http://localhost:3000/burgers/${id}`, {
+                    method: "PATCH",
+                    headers: { "Content-Type": "application/json" },
+                    body: dataJson
+                })
+
+                const res = await req.json()
+
+                console.log(res)
             }
         },
         mounted() {
             this.getRequests(),
-            this.getStatus
+            this.getStatus()
         }
     }
 </script>
