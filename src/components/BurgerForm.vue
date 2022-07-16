@@ -89,10 +89,10 @@
 
                 setTimeout(() => this.msg = "", 3000)
 
-                this.bread = ''
-                this.meat =''
-                this.optionals = ''
-                this.name = ''
+                this.bread = []
+                this.meat = []
+                this.optionals = []
+                this.name = []
             }
         },
         mounted() {
