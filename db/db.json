@@ -80,23 +80,34 @@
   "burgers": [
     {
       "name": "Matheus Silva",
-      "meat": "Veggie burger",
+      "meat": "Maminha",
       "bread": "Italiano Branco",
       "optionals": [
-        "Cebola roxa",
-        "Tomate",
-        "Pepino"
+        "Bacon",
+        "Tomate"
+      ],
+      "status": "Finalizado",
+      "id": 1
+    },
+    {
+      "name": "Zé da Silva",
+      "meat": "Alcatra",
+      "bread": "3 Queijos",
+      "optionals": [
+        "Bacon",
+        "Tomate"
       ],
       "status": "Finalizado",
       "id": 2
     },
     {
-      "name": "Maria",
+      "name": "João",
       "meat": "Picanha",
-      "bread": "3 Queijos",
+      "bread": "Parmesão e Orégano",
       "optionals": [
         "Bacon",
-        "Pepino"
+        "Cebola roxa",
+        "Cheddar"
       ],
       "status": "Solicitado",
       "id": 4
